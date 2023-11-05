@@ -1,15 +1,16 @@
+import java.time.LocalDate;
 import java.util.Timer;
 
-public class Tasks{
+public class Tasks {
 	
 	private String name;
 	private String desc;
 	private boolean done;
-	private int deadline;
+	private LocalDate deadline;
 	private Timer time;
 	
 	
-	public Tasks(String name,String desc, int deadline) {
+	public Tasks(String name,String desc, LocalDate deadline) {
 		this.name = name;
 		this.desc = desc;
 		this.done = false; //is true when task complete
@@ -18,6 +19,10 @@ public class Tasks{
 		time = new Timer();
 	}
 	
+	public String toString() {
+		return (getDone()+ "\t|\t" + getName() + "\t|\t" + getDeadline());
+		
+	}
 	public String getName() {
 		return name;
 	}
@@ -26,7 +31,11 @@ public class Tasks{
 		return desc;
 	}
 	
-	public int getDeadline() {
+	public boolean getDone() {
+		return done;
+	}
+	
+	public LocalDate getDeadline() {
 		return deadline;
 	}
 	
