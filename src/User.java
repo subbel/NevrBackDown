@@ -1,8 +1,5 @@
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
-
-import edu.princeton.cs.algs4.StdOut;
 
 public class User {
 	private String name;

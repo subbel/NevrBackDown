@@ -33,8 +33,9 @@ public class Main {
 					System.out.println("Description of Task: ");
 					String descT = input.next();
 					
-					System.out.println("Deadline of Task: "); //deadline as an int rn 
+					System.out.println("Deadline of Task (yyyy-MM-dd): "); //deadline as an int rn 
 					LocalDate deadlineT = LocalDate.parse(input.next());
+					System.out.println(deadlineT);
 
 					Tasks newTask = new Tasks(nameT, descT, deadlineT);
 					user.addTask(newTask);
