@@ -9,7 +9,7 @@ public class Tasks{
 	private Timer time;
 	
 	
-	public Tasks(String name,String desc,boolean done, int deadline) {
+	public Tasks(String name,String desc, int deadline) {
 		this.name = name;
 		this.desc = desc;
 		this.done = false; //is true when task complete
